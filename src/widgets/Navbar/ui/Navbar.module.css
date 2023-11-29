@@ -1,0 +1,17 @@
+.container {
+}
+
+.bar {
+    display: flex;
+}
+
+.item {
+    list-style: none;
+    padding: 0.5rem 2rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.active {
+    border-bottom: solid 0.1rem black;
+}
