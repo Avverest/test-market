@@ -1,0 +1,19 @@
+.content {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.label {
+    font-size: 1.5rem;
+    flex-grow: 1;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+.actions > * {
+    margin-left: 0.5rem;
+}

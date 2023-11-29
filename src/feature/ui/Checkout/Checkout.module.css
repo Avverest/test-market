@@ -1,0 +1,16 @@
+.form {}
+
+.form > * {
+    margin-top: 1rem;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.actions button:first-child {
+    background-color: var(--error-color);
+    color: var(--bg-color);
+    margin-right: 1rem;
+}

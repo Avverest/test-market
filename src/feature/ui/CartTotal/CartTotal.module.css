@@ -1,0 +1,10 @@
+.total {
+    padding: 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.num {
+    font-weight: bold;
+}
