@@ -1,27 +1,25 @@
 import { FC } from 'react'
-import { Table } from 'shared/ui'
-import { Data } from 'shared/ui/Table/Table.tsx'
+import { StoreTable } from 'widgets'
+import { usePagination } from 'shared/utils'
+import { Pagination } from 'shared/ui'
+import { setNextPage, setPrevPage, useAppDispatch } from 'app/store'
 
-const data: Data[] = [
-  {
-    id: 1,
-    name: 'test',
-    count: 4,
-    price: '$10',
-  },
-  {
-    id: 2,
-    name: 'test',
-    count: 2,
-    price: '$14',
-  },
-]
-
+const Path = 'food'
 export const FoodPage: FC = () => {
+  const { data, maxPage, page } = usePagination(Path)
+  const dispatch = useAppDispatch()
+
   return (
     <>
       <h2>Еда</h2>
-      <Table data={data} />
+      <StoreTable place={Path} data={data} />
+      <span className='spacer' />
+      <Pagination
+        maxPage={maxPage}
+        page={page}
+        prevPage={() => dispatch(setPrevPage(Path))}
+        nextPage={() => dispatch(setNextPage(Path))}
+      />
     </>
   )
 }
