@@ -1,0 +1,12 @@
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+.input input {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    outline: unset;
+    border: unset;
+    box-shadow: 0 0 0 1px var(--text-color);
+}

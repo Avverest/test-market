@@ -1,0 +1,64 @@
+.modal {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    position: absolute;
+    justify-content: center;
+    top: 0;
+    left: 0;
+}
+
+.substrate {
+    width: 100%;
+    height: 100%;
+    background-color: var(--text-color);
+    opacity: 0.4;
+}
+
+.container {
+    width: 80vw;
+    max-width: 800px;
+    max-height: 80vh;
+    position: absolute;
+    background-color: var(--bg-color);
+    border-radius: 5px;
+    text-align: left;
+    padding: 20px;
+    box-shadow: 0 0 4px 2px var(--shadow);
+    display: flex;
+    flex-direction: column;
+}
+
+.iconClose {
+    position: absolute;
+    right: -25px;
+    top: -15px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 4px 2px var(--shadow);
+    transition: background-color 200ms ease-in;
+}
+.iconClose:hover {
+    background-color: var(--button-color);
+}
+
+.icon {
+    display: flex;
+    font-size: 1rem;
+    width: 1rem;
+    height: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.actions button {
+    margin-left: 0.6rem;
+}

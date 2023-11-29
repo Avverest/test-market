@@ -1,1 +1,1 @@
-export { clsx } from './clsx/clsx.ts'
+export { clsx } from 'shared/lib/clsx.ts'
