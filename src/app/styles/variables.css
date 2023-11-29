@@ -1,0 +1,11 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #213547;
+    --error-color: #c52d2d;
+    --button-color: #f9f9f9;
+    --button-hover-color: #646cff;
+    --link-color: #646cff;
+    --link-hover-color: #535bf2;
+
+    --shadow: #00000020;
+}
