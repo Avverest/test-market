@@ -32,5 +32,6 @@ module.exports = {
     'operator-linebreak': ['error', 'before'],
     'function-paren-newline': ['error', 'consistent'],
     'no-console': ["warn", { allow: ["debug"] }],
+    '@typescript-eslint/no-dynamic-delete': 'off',
   },
 }
