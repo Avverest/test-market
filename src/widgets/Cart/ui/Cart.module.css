@@ -1,30 +1,67 @@
 .content {
-    /*background: #c7bbbb50;*/
-    width: 6vw;
-    padding: 1rem;
-    box-shadow: 0 0 100px 1px rgba(0,0,0,0.1);
+    width: 0;
+    box-shadow: 0 0 100px 1px var(--shadow);
     transition: width 200ms ease-in;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.open {
+    width: 20rem;
 }
 
 .head {
     display: flex;
     align-items: center;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding: 1rem;
+    position: relative;
 }
 
-.head svg {
-    margin-right: 1rem;
+.cart {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    flex-grow: 1;
+    padding: 1rem;
 }
 
-.open {
-    width: 30vw;
+
+.list > * {
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px black;
+}
+
+.list:first-child {
+    margin-top: unset;
+}
+
+
+.item > * {
+    margin-left: 0.5rem;
+}
+
+.empty {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
 }
 
 .button {
     position: absolute;
+    top: 2rem;
     left: -3rem;
-    z-index: 1;
-    background-color: #fff;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    width: 3rem;
+}
+
+.actions {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
 }
